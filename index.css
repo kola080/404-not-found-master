@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+:root {
+  /* Primary colors */
+  --black: hsla(0 0% 20% 1);
+  --grayish-black: hsl(0, 0%, 31%);
+  --gray: hsla(0, 0%, 74%, 1);
+  /* font weight */
+  --fw-big: 700;
+  --fw-mid: 600;
+  --fw-sm: 400;
+  /* font size */
+  --fs-big: 64px;
+  --fs-mid: 24px;
+  --fs-sm: 14px;
+}
+body {
+  font-family: "Inconsolata", monospace;
+  font-weight: var(--fw-big);
+  font-size: var(--fs-mid);
+  line-height: 25px;
+  /* overflow: hidden; */
+}
+main > p {
+  font-size: var(--fs-mid);
+  padding: 40px 0px 0px 77px;
+  width: 100%;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 77px 0px 0px;
+  gap: 40px;
+}
+.image-container {
+  width: 100%;
+  padding: 0px 0px 0px 77px;
+}
+.image-container > img {
+  max-width: 100%;
+  max-height: 100%;
+  width: 539px;
+}
+.content {
+  padding-top: 50px;
+  font-family: "Space Mono", monospace;
+  width: 100%;
+  color: var(--black);
+  font-size: var(--fs-mid);
+  font-weight: var(--fw-sm);
+  line-height: 36px;
+}
+.text {
+  width: 70%;
+}
+.content > h1 {
+  font-size: var(--fs-big);
+  font-weight: var(--fw-big);
+  line-height: 95px;
+  margin-bottom: 36px;
+}
+button {
+  background-color: hsl(0 0% 0%);
+  width: 216px;
+  height: 68px;
+  color: white;
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-big);
+  line-height: 20px;
+  margin-top: 64px;
+}
+button:hover {
+  background-color: var(--grayish-black);
+  color: white;
+}
+footer > p {
+  margin-top: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: var(--fs-sm);
+  font-weight: 500;
+  line-height: 17px;
+  color: var(--gray);
+}
+@media (max-width: 450px) {
+  main > p {
+    padding: 20px 24px;
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    gap: 0px;
+  }
+  .image-container {
+    padding: 64px 44px 77px 44px;
+  }
+  .content {
+    padding: 0px 1px 0px 24px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .content > h1 {
+    font-size: 48px;
+    line-height: 70px;
+    margin-bottom: 30px;
+  }
+}
